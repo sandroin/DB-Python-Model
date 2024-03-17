@@ -72,7 +72,4 @@ class Employee(object):
             c.execute("DELETE FROM employee")
         else:
             c.execute("DELETE FROM employee WHERE " + " AND ".join(params_for_filtering), values)
-
-
-
-
+            
